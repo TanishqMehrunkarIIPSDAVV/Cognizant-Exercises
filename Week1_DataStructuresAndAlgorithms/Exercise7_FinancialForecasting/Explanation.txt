@@ -1,0 +1,8 @@
+Recursion:
+Recursion is a programming technique where a function calls itself to solve smaller instances of a problem. It simplifies problems that can be broken down into similar subproblems, such as calculating future values based on repeated growth.
+
+Time Complexity:
+The time complexity is O(n), as the function calls itself once for each period.
+
+Optimization:
+To avoid excessive computation, especially for large n, use an iterative approach or memoization.

@@ -1,0 +1,17 @@
+Big O Notation:
+Big O notation describes the upper bound of an algorithm’s running time as the input size grows. It helps analyze and compare the efficiency of algorithms, especially for large datasets.
+
+	Best Case: The minimum time required (e.g., first element is the target).
+	Average Case: The expected time over all possible inputs.
+	Worst Case: The maximum time required (e.g., target not found or last element).
+
+Linear Search:
+Time Complexity: O(n) in worst and average case, O(1) in best case.
+Binary Search:
+Time Complexity: O(log n) in worst and average case, O(1) in best case.
+Requires the array to be sorted.
+
+For small or unsorted datasets, linear search is simple and effective.
+For large, sorted datasets, binary search is much faster and more efficient.
+
+

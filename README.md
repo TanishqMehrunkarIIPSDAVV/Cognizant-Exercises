@@ -1,1 +1,1 @@
-![](https://komarev.com/ghpvc/?username=TanishqMehrunkarIIPSDAVV/Cognizant-Exercises&style=flat&color=blue)
+![](https://komarev.com/ghpvc/?username=TanishqMehrunkarIIPSDAVV&style=flat&color=blue)

@@ -1,0 +1,15 @@
+Bubble Sort: Simple, compares and swaps adjacent elements. Inefficient for large lists (O(n²)).
+Insertion Sort: Builds the sorted array one item at a time. Good for small or nearly sorted lists (O(n²)).
+Quick Sort: Divides the list using a pivot, sorts partitions recursively. Fast for large lists (O(n log n) average).
+Merge Sort: Divides the list into halves, sorts and merges them. Consistent O(n log n) time, but uses extra space.
+
+Algorithm	       Best Case	       Average Case	        Worst Case
+Bubble Sort	      O(n²)	                 O(n²)	                  O(n²)
+Quick Sort	      O(n log n)	        O(n log n)	            O(n²)
+
+Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This results in O(n²) time complexity for all cases except when the list is already sorted.
+Quick Sort uses a divide-and-conquer approach, partitioning the array and sorting subarrays recursively. Its average and best-case time complexity is O(n log n), but the worst case (when the smallest or largest element is always chosen as the pivot) is O(n²).
+
+Efficiency: Quick Sort is much faster than Bubble Sort for large datasets due to its O(n log n) average time complexity.
+Scalability: Quick Sort handles large lists efficiently, while Bubble Sort becomes very slow as the list size increases.
+Practical Use: Bubble Sort is simple but inefficient and is mainly used for educational purposes or very small datasets. Quick Sort is widely used in real-world applications due to its speed and efficiency.

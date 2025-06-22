@@ -1,0 +1,24 @@
+Arrays in Java are contiguous blocks of memory where each element is stored at a fixed offset from the start. This allows for:
+    Fast access: Accessing an element by index is O(1) time.
+    Cache efficiency: Contiguous storage improves cache performance.
+    Simplicity: Arrays are simple to use for fixed-size collections.
+However, my project uses ArrayList<Employee>, which is a dynamic array. It resizes automatically and provides similar advantages, with added flexibility for dynamic data.
+
+Operation	        Method Used in Project	Time Complexity         Explanation
+Add	                    addEmployee	                   O(1) (amortized)	       Adding to the end of an ArrayList is usually O(1), except when resizing.
+Search	              searchEmployee	           O(n)	                           Linear search through the list for a matching ID.
+Traverse	         displayEmployees	          O(n)	                          Iterates through all employees to display them.
+Delete	               deleteEmployee	            O(n)	                        removeIf checks each element; worst case removes from the end.
+
+Limitations:
+    Fixed size: Standard arrays cannot grow or shrink after creation.
+    Inefficient insertions/deletions: Removing or inserting elements (except at the end) requires shifting elements, which is O(n).
+    Linear search: Searching for an element by value is O(n) unless the array is sorted and binary search is used.
+
+When to use arrays:
+
+When the number of elements is known and fixed.
+When you need fast random access by index.
+When memory overhead must be minimized.
+
+In my project, using ArrayList<Employee> is suitable for a moderate number of employees and when we need dynamic resizing. For very large datasets or frequent searches by ID, a HashMap<Integer, Employee> would be more efficient for search, add, and delete operations.

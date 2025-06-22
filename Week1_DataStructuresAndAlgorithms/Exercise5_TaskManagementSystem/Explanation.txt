@@ -1,0 +1,15 @@
+Types of Linked Lists
+    Singly Linked List: Each node points to the next node. Traversal is only forward. Insertion and deletion at the beginning are efficient.
+    Doubly Linked List: Each node points to both the next and previous nodes. Allows traversal in both directions and efficient insertion/deletion at both ends.
+Java's LinkedList (which I used) is a doubly linked list.
+
+Operation	        Method Used in Project	        Time Complexity	         Explanation
+Add	                   addTask	                                 O(1)	                          Adding to the end of a linked list is O(1) (Java's LinkedList maintains tail).
+Search	             searchTask	                             O(n)	                          Must traverse the list to find a task by ID.
+Traverse	        showTasks	                            O(n)	                         Visits each node to display tasks.
+Delete	              deleteTask	                          O(n)	                           Must find the node by ID, then remove it.
+
+Advantages of Linked Lists Over Arrays for Dynamic Data
+    Dynamic Size: Linked lists can grow or shrink easily; arrays have fixed size or require resizing.
+    Efficient Insert/Delete: Inserting or deleting elements (especially at the start or middle) is O(1) if you have a reference to the node, while arrays require shifting elements (O(n)).
+    No Wasted Space: No need to pre-allocate extra space as with arrays.

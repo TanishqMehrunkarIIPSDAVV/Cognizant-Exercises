@@ -11,7 +11,6 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Enable component scanning for com.library package -->
     <context:component-scan base-package="com.library"/>
 
     <bean id="bookService" class="com.library.service.BookService">
